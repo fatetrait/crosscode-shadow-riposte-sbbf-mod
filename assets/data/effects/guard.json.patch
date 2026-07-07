@@ -1,0 +1,179 @@
+[{
+    "type": "ENTER",
+    "index": ["ANIMS"]
+}, {
+    "type": "INIT_KEY",
+    "index": "SUB",
+    "content": []
+}, {
+    "type": "ENTER",
+    "index": ["SUB"]
+}, {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+        "name": "RIPOSTE_START",
+        "pivot": {
+            "x": 0,
+            "y": 0
+        },
+        "sheet": {
+            "src": "media\/entity\/effects\/riposte_start.png",
+            "offX": 0,
+            "offY": 0,
+            "width": 529,
+            "height": 85
+        },
+        "time": 2,
+        "repeat": true,
+        "frames": [
+            0
+        ]
+    },
+}, {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+        "name": "RIPOSTE_START",
+        "pivot": {
+            "x": 0,
+            "y": 0
+        },
+        "sheet": {
+            "src": "media\/entity\/effects\/riposte_start.png",
+            "offX": 0,
+            "offY": 0,
+            "width": 529,
+            "height": 85
+        },
+        "time": 2,
+        "repeat": true,
+        "frames": [
+            0
+        ]
+    },
+},{
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+        "name": "RIPOSTE_POP",
+        "pivot": {
+            "x": 0,
+            "y": 0
+        },
+        "sheet": {
+            "src": "media\/entity\/effects\/riposte_pop.png",
+            "offX": 0,
+            "offY": 0,
+            "width": 477,
+            "height": 57
+        },
+        "time": 2,
+        "repeat": true,
+        "frames": [
+            0
+        ]
+    },
+}, {
+    "type": "EXIT",
+    "count": 2
+}, {
+    "type": "ENTER",
+    "index": ["EFFECTS", "neutral"]
+}, {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+        "useTargetAngle": true,
+        "keepAngleSync": false,
+        "offset": {
+            "x": -85,
+            "y": 120,
+            "z": 265
+        },
+        "pAlpha": {
+            "init": 0,
+            "start": {
+                "value": 0.9,
+                "time": 0.01,
+                "spline": ""
+            },
+            "end": {
+                "value": 0.4,
+                "time": 0.2,
+                "spline": ""
+            }
+        },
+        "pScale": {
+            "init": {
+                "x": 0.2,
+                "y": 0.2
+            },
+            "start": {
+                "value": {
+                    "x": 0.4,
+                    "y": 0.4
+                },
+                "spline": "EASE"
+            }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.25,
+        "anim": "RIPOSTE_START",
+        "type": "PLAY_ANIM"
+    },
+}, {
+    "type": "EXIT",
+    "count": 2
+},{
+    "type": "ENTER",
+    "index": ["EFFECTS", "perfectGuard"]
+},  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+        "offset": {
+            "x": -95,
+            "y": 120,
+            "z": 200
+        },
+        "numParticles": 1,
+        "duration": 2,
+        "centralAngle": 1,
+        "keySpline": "EASE_OUT",
+        "rotateWithTime": true,
+        "collision": false,
+        "pAlpha": {
+            "init": 0,
+            "start": {
+                "value": 0.9,
+                "time": 0.01,
+                "spline": ""
+            },
+            "end": {
+                "value": 0.4,
+                "time": 0.2,
+                "spline": ""
+            }
+        },
+        "pScale": {
+            "init": {
+                "x": 0.3,
+                "y": 0.3
+            },
+            "start": {
+                "value": {
+                    "x": 0.6,
+                    "y": 0.6
+                },
+                "spline": "EASE"
+            }
+        },
+        "moveWithTarget": 1,
+        "anim": "RIPOSTE_POP",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+    },
+}, {
+    "type": "EXIT",
+    "count": 2
+}]
