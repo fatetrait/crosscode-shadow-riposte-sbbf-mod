@@ -1,5 +1,12 @@
 [{
     "type": "ENTER",
+    "index": []
+}, {
+    "type": "SET_KEY",
+    "index": "ANIMS",
+    "content": {}
+}, {
+    "type": "ENTER",
     "index": ["ANIMS"]
 }, {
     "type": "INIT_KEY",
@@ -12,24 +19,24 @@
     "type": "ADD_ARRAY_ELEMENT",
     "index": 0,
     "content": {
-        "name": "RIPOSTE_START",
+        "name": "PGUARD_FLASH",
         "pivot": {
-            "x": 0,
-            "y": 0
+            "x": 24,
+            "y": 24
         },
         "sheet": {
-            "src": "media\/entity\/effects\/riposte_start.png",
+            "src": "media\/entity\/effects\/guard.png",
             "offX": 0,
-            "offY": 0,
-            "width": 529,
-            "height": 85
+            "offY": 224,
+            "width": 48,
+            "height": 32
         },
-        "time": 2,
+        "time": 0.1,
         "repeat": true,
         "frames": [
             0
         ]
-    },
+    }
 }, {
     "type": "ADD_ARRAY_ELEMENT",
     "index": 0,
@@ -52,7 +59,7 @@
             0
         ]
     },
-},{
+}, {
     "type": "ADD_ARRAY_ELEMENT",
     "index": 0,
     "content": {
